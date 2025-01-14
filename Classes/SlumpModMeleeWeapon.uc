@@ -260,6 +260,7 @@ simulated state Release
 		{
 			if (bHitPawn)
 			{
+				MissCount = 0;
 				//Inform Pawn that the attack was successful
 				if(CurrentFireMode >= Attack_Slash && CurrentFireMode <= Attack_Sprint)
 				{
@@ -309,6 +310,9 @@ simulated state Release
 					AOCOwner.S_ConsumeStamina(StaminaLoss);
 					CurrentStamina -= StaminaLoss;
 
+					if (MissCount >= 2){
+						GotoState('Recovery');
+					}
 				}
 
 				ComboHitCount = 0;
