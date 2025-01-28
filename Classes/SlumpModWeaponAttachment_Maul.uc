@@ -66,8 +66,8 @@ KickOffset=(X=50, Y=0, Z=-65)
 		ImagePath="UI_CustWeaponImages_SWF.skin_maul_png"
 		)};
 	Skins(1)={(
-		SkeletalMeshPath="WP_hbl_Maul_Variant_01.WEP_Maul_Variant_01",
-		StaticMeshPath="WP_hbl_Maul_Variant_01.SM_Maul_Variant_01",
+		SkeletalMeshPath="WP_hbl_Maul.WEP_Maul",
+		StaticMeshPath="WP_hbl_Maul.SM_Maul",
 		MaterialPath="",
 		StaticMeshScale=1.0,
 		ImagePath="UI_CustWeaponImages_SWF.skin_avians_rage_maul_png"
