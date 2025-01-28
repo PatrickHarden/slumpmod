@@ -19,8 +19,6 @@ simulated state Active
 	/** Initialize the weapon as being active and ready to go. */
 	simulated event BeginState(Name PreviousStateName)
 	{
-		if (bDebugLogs)
-			`log("BEGIN ACTIVE"@Class);
 
 		if (AOCOwner == none)
 			CacheWeaponReferences();
@@ -311,6 +309,7 @@ simulated state Release
 					CurrentStamina -= StaminaLoss;
 
 					if (MissCount >= 2){
+						MissCount = 0;
 						GotoState('Recovery');
 					}
 				}
